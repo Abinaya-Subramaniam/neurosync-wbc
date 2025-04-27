@@ -1,14 +1,15 @@
-import React from 'react'; 
+import { useState } from 'react';
 import './App.css';
+import Talkmate from './pages/Talkmate';
 
-function App() {
-    return (
-        <div className="App">
-            <main>
+const App = () => {
+  const [showHeader, setShowHeader] = useState(true);
 
-            </main>
-        </div>
-    );
-}
+  return (
+    <div className="app">
+      <Talkmate/>
+    </div>
+  );
+};
 
 export default App;
